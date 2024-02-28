@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Diabetes Symptoms Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        input[type="number"] {
+            width: calc(100% - 20px); /* Adjust input width considering padding */
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+	#recommendation {
+	    margin: 20px auto;
+	    max-width: 600px;
+	    padding: 20px;
+	    background-color: #ffffff;
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	    color: black; /* Updated color */
+	    font-weight: bold; /* Make text bold */
+	}
+    </style>
+</head>
+<body>
+    <h1>Enter Diabetes Symptoms Data</h1>
+    <form id="symptoms-form">
+        <table>
+            <tr>
+                <td>Pregnancies</td>
+                <td><input type="number" name="Pregnancies" id="Pregnancies"  ></td>
+            </tr>
+            <tr>
+                <td>Glucose</td>
+                <td><input type="number" name="Glucose" id="Glucose"  ></td>
+            </tr>
+            <tr>
+                <td>Blood Pressure</td>
+                <td><input type="number" name="BloodPressure" id="BloodPressure"  ></td>
+            </tr>
+            <tr>
+                <td>Insulin</td>
+                <td><input type="number" name="Insulin" id="Insulin"  ></td>
+            </tr>
+            <tr>
+                <td>BMI</td>
+                <td><input type="number" name="BMI" id="BMI"  ></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="Age" id="Age"  ></td>
+            </tr>
+        </table>
+        <button type="button" onclick="submitSymptoms()">Submit</button>
+    </form>
+    <div id="recommendation"></div>
+
+    <script src="h_script.js"></script>
+</body>
+</html>
